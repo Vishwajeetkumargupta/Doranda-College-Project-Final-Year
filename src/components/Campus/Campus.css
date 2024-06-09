@@ -1,0 +1,54 @@
+.campus{
+    margin: 80px auto;
+    width: 90%;
+    text-align: center;
+}
+/* .gallery{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+.gallery img{
+    width: 23%;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+} */
+
+.gallery {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 40px;
+    overflow: hidden;
+    }
+    
+    .gallery img {
+        width: 23%;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        animation: slide 10s infinite linear;
+        margin: 20px;
+        }
+            @keyframes slide {
+                0% {
+                    transform: translateX(0);
+                }
+                100% {
+                    transform: translateX(-510%);
+                }
+                
+            }
+
+            /*-------media query------*/
+            @media (max-width: 850px){
+                .gallery img{
+                    width: 48%;
+                }
+            }
+            @media (max-width: 650px){
+                .gallery img{
+                    width: 100%;
+                }
+            }
+            
